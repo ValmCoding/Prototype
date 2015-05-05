@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-
+//This is now a comment here
 [System.Serializable] //lets you manage database through inspector in Item database
 public class Item {
 
