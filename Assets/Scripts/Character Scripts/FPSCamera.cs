@@ -28,7 +28,6 @@ public class FPSCamera : MonoBehaviour {
 	public void LookUp(){
 		
 		mouseY -= Input.GetAxis ("Mouse Y") * yMouseSensitivity;
-		Debug.Log (mouseY);
 		mouseY = Mathf.Clamp(mouseY, minAngle, maxAngle);
 		Quaternion yQuaternion = Quaternion.AngleAxis (mouseY, Vector3.right);
 		transform.localRotation = originalRotation * yQuaternion;
